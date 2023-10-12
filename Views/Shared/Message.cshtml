@@ -1,0 +1,88 @@
+﻿@model whatsApp_chat.Data.models.Message
+@*<h1>@Model.Text</h1>*@
+
+
+@{
+    string _username = Context.Request.Cookies["username"];
+    string state = Model.Username == _username ? "send" : "recive";
+    string component = "";
+    string imageId = Model.Text?.Split(".")[0];
+    string date = Model.Datetime.ToString("MM/dd/yyyy");
+    string time = Model.Datetime.ToString("HH:mm");
+    switch (Model.MessageType)
+    {
+        case MessageType.text:
+            component = $@"
+<div class=""message"">
+<div class=""{state}"">
+<span class=""username"">{Model.Name}</span>
+<span class=""main text"">
+<span class=""angle""></span> {Model.Text}
+<span class=""info"">
+<span class=""datetime""> {date} - {time}</span> &nbsp;
+<span class=""isChecked""><i class=""bi bi-check-all""></i></span>
+</span>
+</span>
+</div>
+</div>
+";
+            break;
+
+        case MessageType.voice:
+            component = $@"
+<div class=""message"">
+<div class=""{state}"">
+<span class=""username"">{Model.Name}</span>
+<span class=""main uploading w-[calc(100%-1rem)] min-[360px]:w-80"">
+<audio class=""w-full"" controls controlsList=""nodownload noplaybackrate"">
+<source src=""/audios/{Model.Text}"" type=""audio/wav"" />
+Your browser does not support the audio element.
+</audio>
+<span class=""angle""></span>
+<span class=""info"">
+<span class=""datetime""> {date} - {time}</span> &nbsp;
+<span class=""isChecked""><i class=""bi bi-check-all""></i></span>
+</span>
+</span>
+</div>
+</div>
+";
+
+            break;
+
+        case MessageType.image:
+           component= $@"
+<div class=""message"">
+    <div class=""{state}"">
+        <span class=""username"">{Model.Name}</span>
+        <span class=""main image"">
+            <img id=""{imageId}"" class=""imgChat rounded   xs:max-w-[22rem]""
+                src=""/Images/{Model.Text}"" alt="""" />
+            <span class=""angle""></span>
+            <span class=""mt-1 info"">
+            <span class=""datetime""> {date} - {time}</span> &nbsp;
+            <span class=""isChecked""><i class=""bi bi-check-all""></i></span>
+        </span>
+        </span>
+    </div>
+</div>
+";
+            break;
+
+        case MessageType.userJoin:
+            component = $@"
+<div class=""text-center"">
+    <span class=""inline-block p-2 m-4 rounded-lg bg-zinc-800 text-zinc-50"">
+        {Model.Name} joined <br />
+        at <span class=""text-[13px]""> {time} &nbsp;  {date}</span>
+    </span>
+   </div>
+";
+            break;
+
+        default:
+            break;
+    }
+}
+
+@Html.Raw(component)

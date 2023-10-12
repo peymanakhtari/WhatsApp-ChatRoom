@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Message>
+@{
+    Layout = null;
+    List<string> chats = new List<string>();
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        .userjoined {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    @foreach (var item in Model)
+    {
+        <div style="padding:8px">
+            <div style="border:1px gray solid;display:inline-block;padding:8px">
+                @if (item.MessageType == MessageType.text)
+                {
+                    <span class="userjoined">
+                        @item.Name
+                    </span>
+                    <p>@item.Text</p>
+                }
+                else if (item.MessageType == MessageType.image)
+                {
+                    <span class="userjoined">
+                        @item.Name
+                    </span>
+                    <img style="max-width:15rem" src="/Images/@item.Text" />
+                }
+                else if (item.MessageType == MessageType.voice)
+                {
+                    <span class="userjoined">
+                        @item.Name
+                    </span>
+                    <audio id="code-audio" class="w-full" controls controlsList="nodownload noplaybackrate">
+                        <source src="/Audios/@item.Text" type="audio/wav" />
+                    </audio>
+                }
+                else if (item.MessageType == MessageType.userJoin)
+                {
+                    <span class="userjoined">
+                        @item.Name
+                    </span>
+                    <span>joined</span>
+
+                }
+                <button class="deleteMessage" data-filename="@item.Text" data-messagetype="@item.MessageType" data-messageId="@item.Id" style="margin:4px">delete</button>
+            </div>
+        </div>
+
+    }
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="/js/admin.js"></script>
+</body>
+</html>
+
+

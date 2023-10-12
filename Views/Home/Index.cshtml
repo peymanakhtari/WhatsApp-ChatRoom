@@ -1,0 +1,276 @@
+﻿@using whatsApp_chat.Data.models
+@model IEnumerable<Message>
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+    var name = Context.Request.Cookies["name"];
+    var username = Context.Request.Cookies["username"];
+}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/tailwind.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <script src="https://cdn.jsdelivr.net/npm/@@joeattardi/emoji-button@@3.0.3/dist/index.min.js"></script>
+    <script src="/lib/signalr/dist/browser/signalr.min.js"></script>
+</head>
+
+<body>
+    <div class="absolute top-0 bottom-0 left-0 right-0">
+        <div class="h-[25%] bg-[#00A884]"></div>
+        <div class="h-[75%] bg-[#F0F2F5]"></div>
+    </div>
+    <input type="text" id="name" class="hidden" value="@name">
+    <input type="text" id="username" class="hidden" value="@username">
+    <div
+        class="absolute w-full h-full translate-x-1/2 translate-y-1/2 bg-white rounded-sm shadow-lg bottom-1/2 right-1/2 sm:h-[90%] sm:w-4/5 2xl:w-2/3 ">
+        <div class="header flex h-[4rem] items-center justify-between rounded-sm bg-[#00A884] sm:bg-[#F0F2F5]">
+            <div id="ChatTitle" class="flex items-center h-full">
+                <span class="flex items-center h-full ml-2">
+                    <img class="m-auto h-3/4 overflow-hidden rounded-[60%] bg-[#F0F2F5] p-[2px] "
+                        src="/img/whatsapp.webp" alt="" />
+                </span>
+                <span style="font-family: Monday_Donuts;"
+                    class="ml-3 inline-block text-[24px] text-white sm:text-zinc-950">
+                    Whats App</span>
+            </div>
+            <div id="searchBox" class="items-center hidden w-1/2 h-full">
+                <i onclick="SearchToggle()"
+                    class="bi bi-arrow-left-circle-fill ml-4 cursor-pointer text-[26px] text-white hover:opacity-60 sm:text-zinc-950"></i>
+                <input id="txtSearch"
+                    class="ml-4 h-full w-[85%] bg-[#00A884] text-white focus:outline-none sm:bg-[#F0F2F5] sm:text-zinc-950"
+                    placeholder="Search" type="text" />
+            </div>
+            <div class="flex items-center h-full">
+                <i onclick="SearchToggle()"
+                    class="bi bi-search mr-5 cursor-pointer text-[26px] text-white hover:opacity-60 sm:text-zinc-950"></i>
+                <i onclick="Togglemenu()" id="menuBotton"
+                    class="bi bi-three-dots-vertical mr-3 cursor-pointer text-[26px] text-white hover:opacity-60 sm:text-zinc-950"></i>
+            </div>
+        </div>
+        <div class="relative h-[calc(100%-4rem)] overflow-hidden">
+            <div id="chatArea" class="absolute top-0 left-0 right-0 h-full">
+                <div class="absolute top-0 left-0 right-0 w-full h-full whatsapp-bg"></div>
+                <div id="menu" class="absolute top-0 right-0 menuClose ">
+                    <ul>
+                        <li><a href="https://peymanakhtari.com/">About Author</a></li>
+                        <li><a href="">GitHub</a></li>
+                        <li><a href="/Home/SignOutUser">Exit</a></li>
+                    </ul>
+                </div>
+                <div class="chatBoxes hidden absolute h-[calc(100%-4rem)] w-full  overflow-y-auto px-4 pt-4 md:px-8">
+
+                    @foreach (var message in Model)
+                    {
+                        @await Html.PartialAsync("Message", message)
+                    }
+
+                    @* <div class="message">
+                    <div class="send">
+                    <span class="username">peyman</span>
+                    <span class="main text">
+                    <span class="angle"></span> this is recive message
+                    <span class="info">
+                    <span class="datetime"> 9/11/2023 - 10:19</span> &nbsp;
+                    <span class="isChecked"><i class="bi bi-check-all"></i></span>
+                    </span>
+                    </span>
+                    </div>
+                    </div>
+                    <div id="1" class="message">
+                    <div class="recive">
+                    <span class="username">peyman</span>
+                    <span class="main text">
+                    this is recive message bla bla bla bla bla bla bla bla bla.this
+                    is recive message bla bla bla bla bla bla bla bla bla.this is
+                    recive message bla bla bla bla bla bla bla bla bla.this is
+                    recive message bla bla bla bla bla bla bla bla bla
+                    <span class="angle"></span>
+                    <span class="info">
+                    <span class="datetime"> 9/11/2023 &nbsp; 10:19</span> &nbsp;
+                    </span>
+                    </span>
+                    </div>
+                    </div>
+
+                    <div class="message">
+                    <div class="send">
+                    <span class="username">ali</span>
+                    <span class="main voice w-[calc(100%-1rem)] min-[360px]:w-80">
+                    <audio class="w-full" controls controlsList="nodownload noplaybackrate">
+                    <source src="/files/abc.mp3" type="audio/mp3" />
+                    Your browser does not support the audio element.
+                    </audio>
+                    <span class="angle"></span>
+                    <span class="info">
+                    <span class="datetime"> 9/11/2023 - 10:19</span> &nbsp;
+                    <span class="isChecked"><i class="bi bi-check-all"></i></span>
+                    </span>
+                    </span>
+                    </div>
+                    </div>
+
+                    <div class="message">
+                    <div class="send">
+                    <span class="username">ali</span>
+                    <span class="main voice w-[calc(100%-1rem)] min-[360px]:w-80">
+                    <audio id="code-audio" class="w-full" controls controlsList="nodownload noplaybackrate">
+                    <source src="/files/abc.mp3" type="audio/mp3" />
+                    Your browser does not support the audio element.
+                    </audio>
+                    <span class="angle"></span>
+                    <span class="info">
+                    <span class="datetime"> 9/11/2023 - 10:19</span> &nbsp;
+                    <span class="isChecked"><i class="bi bi-check-all"></i></span>
+                    </span>
+                    </span>
+                    </div>
+                    </div>
+
+                    <div class="text-center">
+                    <span class="inline-block p-2 m-4 rounded-lg bg-zinc-800 text-zinc-50">
+                    saman joined <br />
+                    at <span class="text-[13px]">10:22 &nbsp; 9/12/2022</span>
+                    </span>
+                    </div>
+
+                    <div class="message">
+                    <div class="send">
+                    <span class="username">ali</span>
+                    <span class="main voice">
+                    <img class="rounded border border-zinc-400 xs:max-w-[22rem]"
+                    src="/img/Screenshot 2023-06-17 104600.png" alt="" />
+                    <span class="angle"></span>
+                    <span class="mt-1 info">
+                    <span class="datetime"> 9/11/2023 - 10:19</span> &nbsp;
+                    <span class="isChecked"><i class="bi bi-check-all"></i></span>
+                    </span>
+                    </span>
+                    </div>
+                    </div> *@
+                </div>
+                <div id="expandImage"
+                    class="top-0 z-30 absolute left-0 bg-[rgba(0,0,0,.7)] bottom-0 right-0 w-full h-full hidden">
+                    <img class="w-1/2 rounded-lg perfectCenterWithPosition" alt="">
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 w-full h-16 bg-transparent sendMessageBox">
+                    <div class="flex w-full h-full p-2">
+                        <div class="relative grow">
+                            <input type="text" id="txtMessage" placeholder="Message"
+                                class="h-full w-full rounded-3xl pl-12 pr-12 text-[16px] shadow" />
+                            <span id="btnEmoji"
+                                class="absolute bottom-1/2 left-3 translate-y-1/2 cursor-pointer text-[23px] text-zinc-600 hover:opacity-60">
+                                <i class="bi bi-emoji-smile"></i>
+                            </span>
+                            <label for="input-file"
+                                class="absolute bottom-1/2 right-3 translate-y-1/2 rotate-[-45deg] text-[23px] text-zinc-600 hover:opacity-60">
+                                <i class="bi bi-paperclip"></i>
+                            </label>
+                            <input type="file" class="hidden " id="input-file" accept="image/*" />
+                        </div>
+                        <div class="relative h-full w-14">
+                            <span id="recordEdit"
+                                class="absolute bottom-0 left-0 flex flex-col w-12 h-full m-1 my-auto mr-auto overflow-hidden bg-white shadow-2xl rounded-3xl">
+                                <span id="btnDeleteVoice"
+                                    class="w-full h-10 mt-2 text-xl text-center cursor-pointer aspect-square hover:opacity-60">
+                                    <span><img class="max-w-[26px] mx-auto mt-1" src="/img/recycle-bin.png"
+                                            alt=""></span>
+                                </span>
+                                <span class="flex items-start justify-center w-full h-10 aspect-square">
+                                    <i class="text-red-600 microIcon bi bi-mic-fill"></i>
+                                    <span id="counter">0</span>
+                                </span>
+                            </span>
+                            <span id="sendVoice"
+                                class="absolute m-1 my-auto mr-auto flex h-full w-12 cursor-pointer items-center justify-center rounded-3xl bg-[#00A884] text-center">
+                                <span id="microIcon" class="">
+                                    <i class="text-white bi bi-mic-fill"></i>
+                                </span>
+                                <span id="sendIcon" class="hidden ">
+                                    <i
+                                        class="bi bi-send-fill inline-block pr-1 pt-1 rotate-45 text-[17px] text-white"></i>
+                                </span>
+                            </span>
+                            <span style="display: none;" id="sendText"
+                                class="absolute m-1 my-auto flex h-full w-12 cursor-pointer items-center pr-1 justify-center rounded-3xl bg-[#00A884] text-center z-20 ">
+                                <span class="">
+                                    <i class="bi bi-send-fill inline-block rotate-45 text-[17px] text-white"></i>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="startArea" class="absolute top-0 left-0 right-0 hidden w-full h-full bg-transparent">
+                <div class="absolute top-0 left-0 z-20 w-full h-full ">
+                    <div class="absolute left-0 right-0 top-0 h-full w-full bg-[rgba(0,0,0,.1)]"></div>
+                    <div class="perfectCenterWithPosition h-[380px] w-[calc(100%-10vw)] max-w-[20rem]">
+                        <div class="absolute top-0 h-full w-full bg-[rgba(255,255,255,.85)] blur-3xl"></div>
+                        <div class="relative w-full h-full">
+                            <div
+                                class="flex flex-col items-center justify-center w-full perfectCenterWithPosition h-3/5">
+                                <div style="font-family: Monday_Donuts;" class="w-full text-center text-[26px]">Join the
+                                    chat room
+                                </div>
+                                <div class="flex flex-row items-center justify-center w-full mt-8 usernameBox">
+                                    <div class="relative grow">
+                                        <span class="absolute pointer-events-none ">
+                                            Your name
+                                        </span>
+                                        <input id="user_name" class=" p-[10px] w-full" type="text" />
+                                    </div>
+                                    <div class="ml-1">
+                                        <button type="button" onclick="joinChatRoom()"
+                                            class="rounded disabled:bg-zinc-800 bg-zinc-900 p-[.6rem] text-zinc-100 hover:bg-zinc-700">
+                                            start chat
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <span id="usernameValidation"
+                                class="absolute left-0 top-[65%] text-red-600 font-bold text-[15px] hidden"> Write
+                                your name
+                                please</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Onloadbackground" class="absolute top-0 left-0 right-0 w-full h-full whatsapp-bg"></div>
+            <div id="imagePreview" class="absolute top-0 left-0 right-0 hidden h-full">
+                <div class="absolute left-0 right-0 top-0 h-full w-full bg-[rgba(0,0,0,.8)]">
+                    <div id="imgContainer" class="w-5/12 md:w-4/12 lg:w-1/5 3xl:w-1/6 perfectCenterWithPosition">
+                        <img id="imgSrc" class="w-full h-full rounded-lg " alt="">
+                        <div class="mt-2 text-left bg-transparent h-14 ">
+                            <span id="sendImage"
+                                class="bg-[#00A884] mr-auto  w-14   rounded-[50%] h-14 flex items-center justify-center hover:opacity-70 hover:cursor-pointer">
+                                <i
+                                    class="bi bi-send-fill inline-block rotate-45 text-[17px] text-white pr-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="/js/component.js"></script>
+    <script src="/js/chat.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\whatsApp-chat.bundle.scp.css",
+      "PackagePath": "staticwebassets\\whatsApp-chat.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\css\\component.css",
+      "PackagePath": "staticwebassets\\css\\component.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\css\\font.css",
+      "PackagePath": "staticwebassets\\css\\font.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\css\\index.css.map",
+      "PackagePath": "staticwebassets\\css\\index.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\css\\index.scss",
+      "PackagePath": "staticwebassets\\css\\index.scss"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\css\\reset.css",
+      "PackagePath": "staticwebassets\\css\\reset.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\files\\abc.mp3",
+      "PackagePath": "staticwebassets\\files\\abc.mp3"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\font\\Monday_Donuts.woff",
+      "PackagePath": "staticwebassets\\font\\Monday_Donuts.woff"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\html\\index.html",
+      "PackagePath": "staticwebassets\\html\\index.html"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\html\\test.html",
+      "PackagePath": "staticwebassets\\html\\test.html"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\img\\Screenshot 2023-06-17 104600.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot 2023-06-17 104600.png"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\img\\chatGroupIcon.png",
+      "PackagePath": "staticwebassets\\img\\chatGroupIcon.png"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\img\\default-avatar-profile-icon-symbol-for-website-vector-46547084.jpg",
+      "PackagePath": "staticwebassets\\img\\default-avatar-profile-icon-symbol-for-website-vector-46547084.jpg"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\img\\icons8-search-120.png",
+      "PackagePath": "staticwebassets\\img\\icons8-search-120.png"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\img\\menu-icon-black.png",
+      "PackagePath": "staticwebassets\\img\\menu-icon-black.png"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\img\\menu-icon-white.png",
+      "PackagePath": "staticwebassets\\img\\menu-icon-white.png"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\img\\official-whatsapp-background-image.jpg",
+      "PackagePath": "staticwebassets\\img\\official-whatsapp-background-image.jpg"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\img\\recycle-bin.png",
+      "PackagePath": "staticwebassets\\img\\recycle-bin.png"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\js\\chat.js",
+      "PackagePath": "staticwebassets\\js\\chat.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\js\\component.js",
+      "PackagePath": "staticwebassets\\js\\component.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\js\\tailwind.js",
+      "PackagePath": "staticwebassets\\js\\tailwind.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\signalr\\dist\\browser\\signalr.js",
+      "PackagePath": "staticwebassets\\lib\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Id": "E:\\peyman\\chat app\\aspnetcore\\4\\whatsApp-chat\\wwwroot\\lib\\signalr\\dist\\browser\\signalr.min.js",
+      "PackagePath": "staticwebassets\\lib\\signalr\\dist\\browser\\signalr.min.js"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.whatsApp-chat.props",
+      "PackagePath": "build\\whatsApp-chat.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.whatsApp-chat.props",
+      "PackagePath": "buildMultiTargeting\\whatsApp-chat.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.whatsApp-chat.props",
+      "PackagePath": "buildTransitive\\whatsApp-chat.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.whatsApp-chat.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,60 @@
+/* Reset CSS */
+
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default list styles (e.g., bullet points) */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default margin and padding for headings and paragraphs */
+h1, h2, h3, h4, h5, h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove underline and style for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Remove default styling for form elements */
+input, textarea, select, button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+/* Remove the outline when an element is clicked */
+*:focus {
+  outline: none;
+}
+
+/* Reset some commonly used styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Optionally, add your custom styles below this line */
+

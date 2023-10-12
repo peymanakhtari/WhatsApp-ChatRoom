@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/css/swiper.min.css">
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div class="intro">
+        <h1>Swipeable Tabs</h1>
+        <p>[Android - Material Design]</br>made by <a href="https://github.com/nolimits4web/Swiper">swiperjs</p>
+    </div>
+    <div class="swiper-container">
+        <!-- Add Pagination -->
+        <div class="swiper-pagination">
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Tab 1</div>
+            <div class="swiper-slide">Tab 2</div>
+            <div class="swiper-slide">Tab 3</div>
+            <div class="swiper-slide">Tab 4</div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            loop: true,
+            paginationBulletRender: function (index, className) {
+                var tabsName = ['Apps', 'Tricks', 'News', 'Games'];
+                if (index === (tabsName.length - 1)) {
+                    return '<span class="' + className + '">'
+                        + tabsName[index] + '</span>'
+                        + '<div class="active-mark "></div>';
+                }
+                return '<span class="' + className + '">' + tabsName[index] + '</span>';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
